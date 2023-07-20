@@ -1,0 +1,31 @@
+.footer {
+  background: var(--background2);
+  display: grid;
+  height: 50px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 120px 1fr 120px;
+}
+.footer .footer-container {
+  grid-column: 2/3;
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.footer .scroll-top {
+  display: grid;
+  margin-top: 11px;
+  grid-column: 3/4;
+  justify-content: center;
+  align-items: center;
+}
+.footer .scroll-top i {
+  font-weight: 500;
+  font-size: 1.9rem;
+}
+.footer .scroll-top i:hover {
+  color: orange;
+  cursor: pointer;
+}

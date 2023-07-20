@@ -1,0 +1,56 @@
+@import url("header.css");
+@import url("home.css");
+@import url("about.css");
+@import url("service.css");
+@import url("skills.css");
+@import url("contact.css");
+@import url("footer.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: silver;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+
+:root {
+  --background1: rgb(34, 34, 34);
+  --background2: rgba(34, 34, 34, 0.91);
+  --card_bg: rgba(255, 255, 255, 0.208);
+}
+/* 
+.header {
+  display: none;
+}
+.home {
+  display: none;
+}
+
+.about-section {
+  display: none;
+}
+
+.secvices {
+  display: none;
+}
+
+.skills {
+  display: none;
+}
+.contact {
+  display: none;
+} 
+
+.footer {
+  display: none;
+} */

@@ -1,0 +1,139 @@
+.header {
+  background: var(--background1);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 90px;
+  padding: 0 30px;
+  position: relative;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  position: fixed;
+  background: rgba(34, 34, 34, 0.352);
+  height: 90px;
+  width: 100%;
+  padding: 0 30px;
+  left: 0;
+  z-index: 99;
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.navbar .logo a {
+  color: silver;
+  font-weight: 500;
+  font-size: 18px;
+}
+.navbar .logo a:hover {
+  color: orange;
+}
+.navbar .links li a {
+  font-weight: 400;
+}
+
+.navbar .links a:hover {
+  color: orange;
+}
+/* drop down menu start */
+.navbar .toggle_btn {
+  right: 0;
+  font-size: 32px;
+  font-weight: 500;
+  cursor: pointer;
+  display: none;
+}
+.navbar .toggle_btn i:hover {
+  color: orange;
+}
+.navbar .dropdown_menu {
+  top: 60px;
+  right: 0;
+  height: 0px;
+  position: absolute;
+  width: 250px;
+  background: rgba(255, 255, 255, 0.051);
+  overflow: hidden;
+}
+.navbar .dropdown_menu .dropdown-links {
+  display: grid;
+  align-items: center;
+  height: 250px;
+}
+
+.navbar .dropdown_menu.open {
+  height: 250px;
+  transition: 0.5s ease-in;
+}
+.navbar .dropdown_menu li {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+/* drop down menu end */
+
+
+
+/* Responsive navbar Media Query */
+@media (max-width: 992px) {
+  .navbar .links {
+    display: none;
+  }
+  .navbar {
+    background: none;
+  }
+
+  .navbar .toggle_btn {
+    display: block;
+    position: fixed;
+    margin: 0px 30px;
+  }
+  .navbar .dropdown_menu {
+    display: block;
+    position: fixed;
+    border-radius: 0.6rem;
+    margin: 0px 30px;
+  }
+  .navbar .dropdown_menu a:hover {
+    color: orange;
+  }
+  .navbar .logo a {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  .navbar .dropdown_menu {
+    overflow: hidden;
+    top: 60px;
+    right: 2rem;
+    left: 2rem;
+    height: 0px;
+    position: absolute;
+    position: fixed;
+    border-radius: 0.6rem;
+    margin: 0 0px;
+    width: unset;
+  }
+
+  .navbar .dropdown_menu .dropdown-links {
+    height: 200px;
+  }
+
+  .navbar .dropdown_menu.open {
+    height: 200px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    display: none;
+  }
+}

@@ -1,0 +1,309 @@
+.secvices {
+  height: 100vh;
+  background: var(--background1);
+  display: grid;
+  grid-template-rows: 150px 1fr;
+  padding: 0 30px;
+  justify-content: center;
+  align-items: center;
+}
+.secvices .services-title h1 {
+  margin: 1rem;
+  font-weight: 600;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+}
+
+.secvices .services-title span {
+  color: orange;
+}
+.secvices .card-container {
+  background: var(--background1);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.secvices .card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  height: 300px;
+  padding: 0 2rem;
+  border-radius: 2rem;
+  background-color: var(--card_bg);
+  transition: 0.3s ease;
+}
+.secvices .card2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  height: 300px;
+  padding: 0 2rem;
+  border-radius: 2rem;
+  background-color: var(--card_bg);
+  transition: 0.3s ease;
+}
+.secvices .card3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1rem;
+  height: 300px;
+  padding: 0 2rem;
+  border-radius: 2rem;
+  background-color: var(--card_bg);
+  transition: 0.3s ease;
+}
+
+.card-container .card1:hover,
+.card-container .card2:hover,
+.card-container .card3:hover {
+  /* outline: 0.2rem rgba(255, 166, 0, 0.668) solid; */
+  box-shadow: 0 0.1rem 1.5rem rgba(214, 139, 0, 0.677);
+  background: rgba(255, 166, 0, 0.018);
+  scale: 1 105%;
+}
+
+.secvices i {
+  color: orange;
+  font-size: 4rem;
+}
+
+.secvices a {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: orange;
+  transition: 0.3s ease-in-out;
+}
+.secvices a:hover {
+  scale: 1.1;
+  color: var(--background1);
+}
+.secvices a:active {
+  scale: 1;
+}
+/* Responsive skills Section Media Query */
+
+@media (max-width: 1279px) {
+  .secvices {
+    height: 170vh;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 130px 1fr 1fr;
+  }
+  .secvices .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .secvices .services-title h1 {
+    font-size: 3rem;
+  }
+  .secvices .card1 {
+    height: 250px;
+    width: 700px;
+  }
+  .secvices .card1 h1 {
+    font-size: 1.5rem;
+  }
+  .secvices .card1 i {
+    font-size: 2rem;
+  }
+  .secvices .card1 p {
+    font-size: 0.9rem;
+  }
+  .secvices .card1 a {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+  /* card2 */
+  .secvices .card2 {
+    height: 250px;
+    width: 700px;
+  }
+  .secvices .card2 h1 {
+    font-size: 1.5rem;
+  }
+  .secvices .card2 i {
+    font-size: 2rem;
+  }
+  .secvices .card2 p {
+    font-size: 0.9rem;
+  }
+  .secvices .card2 a {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+  /* card3 */
+  .secvices .card3 {
+    height: 250px;
+    width: 700px;
+  }
+  .secvices .card3 h1 {
+    font-size: 1.5rem;
+  }
+  .secvices .card3 i {
+    font-size: 2rem;
+  }
+  .secvices .card3 p {
+    font-size: 0.9rem;
+  }
+  .secvices .card3 a {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1023px) {
+  .secvices {
+    height: 170vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .secvices {
+    width: 100vw;
+    height: 145vh;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 115px 1fr 1fr;
+  }
+  .secvices .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .secvices .services-title h1 {
+    font-size: 3rem;
+  }
+  .secvices .card1 {
+    display: flex;
+    height: 200px;
+    width: 500px;
+  }
+
+  .secvices .card1 h1 {
+    font-size: 1.2rem;
+  }
+  .secvices .card1 i {
+    font-size: 2rem;
+  }
+  .secvices .card1 p {
+    font-size: 0.7rem;
+  }
+  .secvices .card1 a {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+  /* card2 */
+  .secvices .card2 {
+    display: flex;
+    height: 200px;
+    width: 500px;
+  }
+
+  .secvices .card2 h1 {
+    font-size: 1.2rem;
+  }
+  .secvices .card2 i {
+    font-size: 2rem;
+  }
+  .secvices .card2 p {
+    font-size: 0.7rem;
+  }
+  .secvices .card2 a {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+  /* card 3 */
+  .secvices .card3 {
+    display: flex;
+    height: 200px;
+    width: 500px;
+  }
+
+  .secvices .card3 h1 {
+    font-size: 1.2rem;
+  }
+  .secvices .card3 i {
+    font-size: 2rem;
+  }
+  .secvices .card3 p {
+    font-size: 0.7rem;
+  }
+  .secvices .card3 a {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .secvices {
+    width: 100vw;
+    height: 140vh;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 130px 1fr 1fr;
+  }
+  .secvices .card1 {
+    display: flex;
+    height: 200px;
+    width: 300px;
+  }
+  .secvices .card1 h1 {
+    font-size: 1.2rem;
+  }
+  .secvices .card1 i {
+    font-size: 2rem;
+  }
+  .secvices .card1 p {
+    font-size: 0.5rem;
+  }
+  .secvices .card1 a {
+    padding: 0.4rem 0.4rem;
+    font-size: 1rem;
+  }
+  /* card2 */
+  .secvices .card2 {
+    display: flex;
+    height: 200px;
+    width: 300px;
+  }
+  .secvices .card2 h1 {
+    font-size: 1.2rem;
+  }
+  .secvices .card2 i {
+    font-size: 2rem;
+  }
+  .secvices .card2 p {
+    font-size: 0.5rem;
+  }
+  .secvices .card2 a {
+    padding: 0.4rem 0.4rem;
+    font-size: 1rem;
+  }
+  /* card3 */
+  .secvices .card3 {
+    display: flex;
+    height: 200px;
+    width: 300px;
+  }
+  .secvices .card3 h1 {
+    font-size: 1.2rem;
+  }
+  .secvices .card3 i {
+    font-size: 2rem;
+  }
+  .secvices .card3 p {
+    font-size: 0.5rem;
+  }
+  .secvices .card3 a {
+    padding: 0.4rem 0.4rem;
+    font-size: 1rem;
+  }
+}

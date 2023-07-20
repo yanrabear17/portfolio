@@ -1,0 +1,116 @@
+.about-section {
+  height: 100vh;
+  background: var(--background2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  padding: 0 30px;
+}
+.about-section .about-picture {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.about-section img {
+  width: 100%;
+  height: 100%;
+  transition: 0.7s ease-in;
+  animation: imageAnimation 1s 1;
+}
+.about-section img:hover {
+  opacity: 0.7;
+  transition: 0.7s ease-in;
+  transition-delay: 0.7s;
+}
+.about-section .about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: contentAnimation 1s 1;
+}
+.about-section .about-content h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  color: white;
+}
+.about-section .about-content h2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.about-section .about-content p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+.about-section .about-content span {
+  color: orange;
+}
+.about-section .about-content a {
+  width: 11rem;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  background: orange;
+  transition: 0.3s ease-in-out;
+}
+.about-section .about-content a:hover {
+  scale: 1.2;
+  transition: 0.3s ease-in-out;
+  color: black;
+}
+.about-section .about-content a:active {
+  scale: 1;
+}
+/* animation */
+/* content animation */
+@keyframes contentAnimation {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes imageAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+/* Responsive about section Media Query */
+
+@media (max-width: 992px) {
+  .about-section .about-content h1 {
+    font-size: 3.2rem;
+  }
+  .about-section .about-content h2 {
+    font-size: 1.4rem;
+  }
+  .about-section .about-content p {
+    font-size: 1rem;
+  }
+  .about-section img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+  .about-section img {
+    display: none;
+  }
+  .about-section .about-content {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+}
+@media (max-width: 400px) {
+  .about-section {
+    display: none;
+  }
+}
