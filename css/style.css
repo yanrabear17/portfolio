@@ -28,10 +28,13 @@ li {
   --background2: rgba(34, 34, 34, 0.91);
   --card_bg: rgba(255, 255, 255, 0.208);
 }
-/* 
-.header {
+
+/*  for checking indiividual */
+
+/* .header {
   display: none;
-}
+} 
+
 .home {
   display: none;
 }
@@ -46,10 +49,10 @@ li {
 
 .skills {
   display: none;
-}
-.contact {
-  display: none;
 } 
+ .contact {
+  display: none;
+}
 
 .footer {
   display: none;

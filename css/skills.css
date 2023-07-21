@@ -2,16 +2,15 @@
   height: 100vh;
   background: var(--background2);
   display: grid;
-  grid-template-rows: 150px 1fr 1fr;
+  grid-template-rows: 150px 1fr;
   padding: 0 30px;
+  align-items: center;
 }
 .skills .skills-title h1 {
-  display: flex;
-  justify-content: center;
-  margin: 1rem;
   font-weight: 600;
   font-size: 4rem;
   color: white;
+  text-align: center;
 }
 .skills .skills-title span {
   color: orange;
@@ -20,7 +19,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin: 5rem;
+  /* margin: 5rem; */
 }
 .skills .skills-container p {
   font-weight: 600;
@@ -40,36 +39,35 @@
   position: relative;
 }
 .card-left .skill-per {
-    background: orange;
-    height: 0.5rem;
-    border-radius: 2rem;
-    position: relative;
-    animation: linebarLeft 5.5s  1;
+  background: orange;
+  height: 0.5rem;
+  border-radius: 2rem;
+  position: relative;
+  animation: linebarLeft 5.5s 1;
 }
 /*Skill keyframe */
 
 @keyframes linebarLeft {
-    0% {
-        background: red;
-        width: 0;
-    }
+  0% {
+    background: red;
+    width: 0;
+  }
 
-    30% {
-        background: red;
-    }
-    50% {
-        background: blue;
-    }
-    75% {
-        background: green;
-    }
-    85% {
-        background: orange;
-    }
-    100% {
-       
-        width: 100%;
-    }
+  30% {
+    background: red;
+  }
+  50% {
+    background: blue;
+  }
+  75% {
+    background: green;
+  }
+  85% {
+    background: orange;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .card-left .skill-per::before {
@@ -136,30 +134,30 @@
 
 /* Skill keyframe Right */
 @keyframes linebarRight {
-    0% {
-        background: red;
-        width: 0;
-    }
+  0% {
+    background: red;
+    width: 0;
+  }
 
-    30% {
-        background: red;
-    }
+  30% {
+    background: red;
+  }
 
-    50% {
-        background: blue;
-    }
+  50% {
+    background: blue;
+  }
 
-    75% {
-        background: green;
-    }
+  75% {
+    background: green;
+  }
 
-    85% {
-        background: orange;
-    }
+  85% {
+    background: orange;
+  }
 
-    100% {
-        width: 100%;
-    }
+  100% {
+    width: 100%;
+  }
 }
 .card-right .skill-per::before {
   content: attr(per);
@@ -187,12 +185,17 @@
 }
 
 /* Responsive skills Section Media Query */
+@media (max-width: 1279px) {
+  .skills {
+    height: 1100px;
+  }
+}
 @media (max-width: 992px) {
   .skills {
-    height: 150vh;
-    display: grid;
-    grid-template-rows: 50px 1fr 1fr;
+    height: 950px;
+    place-content: center;
   }
+
   .skills .skills-container {
     display: flex;
     flex-direction: column;
@@ -205,6 +208,7 @@
     display: grid;
     align-items: center;
     padding-bottom: 10px;
+    width: 500px;
   }
   .skills-container .card-left p {
     font-size: 1rem;
@@ -216,5 +220,21 @@
   }
   .skills-container .card-right p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .skills {
+    height: 900px;
+    align-items: center;
+  }
+  .skills-container .card-left {
+    width: 300px;
+  }
+}
+
+@media (max-width: 376px) {
+  .skills-container .card-left {
+    width: 250px;
   }
 }

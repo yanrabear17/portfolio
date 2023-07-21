@@ -8,7 +8,6 @@
   align-items: center;
 }
 .secvices .services-title h1 {
-  margin: 1rem;
   font-weight: 600;
   font-size: 4rem;
   color: white;
@@ -93,7 +92,7 @@
 
 @media (max-width: 1279px) {
   .secvices {
-    height: 170vh;
+    height: 1100px;
     display: grid;
     justify-content: center;
     grid-template-rows: 130px 1fr 1fr;
@@ -160,16 +159,10 @@
   }
 }
 
-@media (max-width: 1023px) {
-  .secvices {
-    height: 170vh;
-  }
-}
-
 @media (max-width: 992px) {
   .secvices {
     width: 100vw;
-    height: 145vh;
+    height: 900px;
     display: grid;
     justify-content: center;
     grid-template-rows: 115px 1fr 1fr;
@@ -245,7 +238,6 @@
 @media (max-width: 640px) {
   .secvices {
     width: 100vw;
-    height: 140vh;
     display: grid;
     justify-content: center;
     grid-template-rows: 130px 1fr 1fr;
@@ -305,5 +297,16 @@
   .secvices .card3 a {
     padding: 0.4rem 0.4rem;
     font-size: 1rem;
+  }
+}
+@media (max-width: 376px) {
+  .secvices .card1 {
+    width: 250px;
+  }
+  .secvices .card2 {
+    width: 250px;
+  }
+  .secvices .card3 {
+    width: 250px;
   }
 }
