@@ -14,9 +14,7 @@
   position: fixed;
   background: var(--background1);
   height: 90px;
-  width: 100vw;
   left: 0;
-  padding: 0 30px;
   z-index: 3;
 }
 
