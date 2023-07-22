@@ -187,9 +187,28 @@
 }
 @media (max-width: 640px) {
   .contact .form-field input[type="submit"] {
-    width: 200px;
+    width: 100px;
+  }
+  .contact .form-field {
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .form-field textarea {
+    width: 300px;
+  }
+  .contact .form-field input[type="text"] {
+    width: 300px;
   }
 }
+@media (max-width: 376px) {
+  .contact .form-field textarea {
+    width: 250px;
+  }
+  .contact .form-field input[type="text"] {
+    width: 250px;
+  }
+}
+
 @media (max-height: 640px) {
   .contact {
     height: 1300px;
