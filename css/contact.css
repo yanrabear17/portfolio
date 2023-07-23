@@ -4,6 +4,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0 30px;
+  min-height: 750px;
 }
 .contact .contact-content {
   display: grid;
@@ -93,8 +94,9 @@
   align-self: center;
 }
 .contact .form-field .form-title h1 {
+  text-align: center;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .contact .form-field .form-title span {
   color: orange;
@@ -176,9 +178,6 @@
     justify-content: center;
   }
 
-  .contact .form-field .form-title h1 {
-    font-size: 2rem;
-  }
   .contact-content .content-mesage h1 {
     font-size: 2rem;
   }
