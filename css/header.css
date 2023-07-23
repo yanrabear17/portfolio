@@ -55,7 +55,8 @@
   color: orange;
 }
 .navbar .dropdown_menu {
-  top: 60px;
+  top: 90px;
+  margin: 0 30px;
   right: 0;
   height: 0px;
   position: absolute;
@@ -103,7 +104,8 @@
 
 @media (max-width: 640px) {
   .navbar .dropdown_menu {
-    top: 60px;
+    top: 90px;
+    margin: 0 30px;
     right: 2rem;
     left: 2rem;
     height: 0px;
