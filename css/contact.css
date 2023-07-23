@@ -62,7 +62,27 @@
   font-size: 2.5rem;
   margin-bottom: 5px;
 }
-
+.contact-content a {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.contact-content a {
+  width: 11rem;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 20px;
+  background: orange;
+  transition: 0.3s ease-in-out;
+}
+.contact-content a:hover {
+  scale: 1.2;
+  transition: 0.3s ease-in-out;
+  color: black;
+}
+.contact-content a:active {
+  scale: 1;
+}
 /* Contact form */
 .contact .form-field {
   display: grid;
